@@ -7,7 +7,7 @@ function Total(num1, num2){
 }
 
 // Task 2
-let x = Math.floor((Math.random() * 10) + 1);
+let x = Math.floor((Math.random() * 10) + 1); 
 function GuessGame(guess){
     if (guess == x) {
         return "Good Work";
@@ -37,15 +37,22 @@ function Closet(num1, num2){
 }
 
 // Task 5
+
+display = true
 var list = [];
 
 function ArrayAdder(){ 
     var input = document.getElementById("input").value;
     list.push(input);
     document.getElementById("input").value = ""
+    
+    if (!display){
+        ArrayDisplay()
+    }
+    
 }
 
-display = true
+
 function ArrayDisplay(){
     
     if (display){
@@ -59,3 +66,4 @@ function ArrayDisplay(){
     }
    
 }
+
