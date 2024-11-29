@@ -7,7 +7,7 @@ function Total(num1, num2){
 }
 
 // Task 2
-let x = Math.floor((Math.random() * 10) + 1); // Generate once
+let x = Math.floor((Math.random() * 10) + 1);
 function GuessGame(guess){
     if (guess == x) {
         return "Good Work";
@@ -23,7 +23,20 @@ function InRange(l, h){
     return false;
 }
 
-// Task 4
+//task 4
+
+function Closet(num1, num2){
+    ans1 = 100 - num1
+    ans2 = 100 - num2
+
+    if (ans1 > ans2){
+        return ans2
+    }
+    
+    return ans1
+}
+
+// Task 5
 var list = [];
 
 function ArrayAdder(){ 
